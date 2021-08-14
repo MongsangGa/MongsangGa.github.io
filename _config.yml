@@ -20,7 +20,7 @@ title                    : "MongSangGa"
 title_separator          : "&#124"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "MongSangGa"
-description              : "An amazing website."
+description              : #
 url                      : "https://mongsangga.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -137,7 +137,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mongsagnga/"
+      url: "https://github.com/mongsangga/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
