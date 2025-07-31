@@ -28,35 +28,49 @@ jobs:
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb    
+
       - name: Install Dart Sass
         run: sudo snap install dart-sass
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+
       - name: Build with Hugo
-        env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-          FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
-          FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
-          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
-          FIREBASE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
-          FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
-          FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
-          FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+              env:
+                HUGO_ENVIRONMENT: production
+                HUGO_ENV: production
+                FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
+                FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
+                FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+                FIREBASE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
+                FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
+                FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
+                FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
+              run: |
+                sed -i 's/PLACEHOLDER_FIREBASE_API_KEY/'"$FIREBASE_API_KEY"'/g' config/_default/params.toml
+                sed -i 's/PLACEHOLDER_FIREBASE_AUTH_DOMAIN/'"$FIREBASE_AUTH_DOMAIN"'/g' config/_default/params.toml
+                sed -i 's/PLACEHOLDER_FIREBASE_PROJECT_ID/'"$FIREBASE_PROJECT_ID"'/g' config/_default/params.toml
+                sed -i 's/PLACEHOLDER_FIREBASE_STORAGE_BUCKET/'"$FIREBASE_STORAGE_BUCKET"'/g' config/_default/params.toml
+                sed -i 's/PLACEHOLDER_FIREBASE_MESSAGING_SENDER_ID/'"$FIREBASE_MESSAGING_SENDER_ID"'/g' config/_default/params.toml
+                sed -i 's/PLACEHOLDER_FIREBASE_APP_ID/'"$FIREBASE_APP_ID"'/g' config/_default/params.toml
+                sed -i 's/PLACEHOLDER_FIREBASE_MEASUREMENT_ID/'"$FIREBASE_MEASUREMENT_ID"'/g' config/_default/params.toml
+                
+                hugo \
+                  --gc \
+                  --minify \
+                  --baseURL "${{ steps.pages.outputs.base_url }}/"      
+                  
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
