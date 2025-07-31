@@ -20,8 +20,6 @@ advertisement = { }
 smartTOC = true
 smartTOCHideUnfocusedChildren = true
 highlightCurrentMenuArea = true
-showViews = true
-showLikes = true
 
 [header]
 layout = "basic"
@@ -46,8 +44,8 @@ disableHeroImageFilter = false
 
 [article]
 showDate = true
-showViews = true
-showLikes = true
+showViews = false
+showLikes = false
 showComments = true
 showDateOnlyInArticle = false
 showDateUpdated = false
@@ -77,8 +75,8 @@ layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false
 showSummary = false
-showViews = true
-showLikes = true
+showViews = false
+showLikes = false
 showTableOfContents = true
 showCards = false
 orderByWeight = false
@@ -108,15 +106,6 @@ showTableOfContents = true
 groupByYear = false
 cardView = false
 cardViewScreenWidth = false
-
-[firebase]
-apiKey = "{{ getenv `FIREBASE_API_KEY` }}"
-authDomain = "{{ getenv `FIREBASE_AUTH_DOMAIN` }}"
-projectId = "{{ getenv `FIREBASE_PROJECT_ID` }}"
-storageBucket = "{{ getenv `FIREBASE_STORAGE_BUCKET` }}"
-messagingSenderId = "{{ getenv `FIREBASE_MESSAGING_SENDER_ID` }}"
-appId = "{{ getenv `FIREBASE_APP_ID` }}"
-measurementId = "{{ getenv `FIREBASE_MEASUREMENT_ID` }}"
 
 [giscus]
 repo = "MongsangGa/MongsangGa.github.io"

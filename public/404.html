@@ -157,29 +157,6 @@
 
   
   
-    
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-  <script>
-
-    const firebaseConfig = {
-      apiKey: "{{ getenv `FIREBASE_API_KEY` }}",
-      authDomain: "{{ getenv `FIREBASE_API_KEY` }}",
-      projectId: "{{ getenv `FIREBASE_PROJECT_ID` }}",
-      storageBucket: "{{ getenv `FIREBASE_STORAGE_BUCKET` }}",
-      messagingSenderId: "{{ getenv `FIREBASE_MESSAGING_SENDER_ID` }}",
-      appId: "{{ getenv `FIREBASE_APP_ID` }}",
-      measurementId: "{{ getenv `FIREBASE_MEASUREMENT_ID` }}"
-    };
-
-    var app = firebase.initializeApp(firebaseConfig);
-    var db = firebase.firestore();
-    var auth = firebase.auth();
-
-  </script>
-    
-  
 
   
   
