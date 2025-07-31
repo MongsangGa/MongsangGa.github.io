@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Example on MongsangGa</title>
+    <link>http://localhost:62695/tags/example/</link>
+    <description>Recent content in Example on MongsangGa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 MongsangGa</copyright>
+    <lastBuildDate>Fri, 25 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:62695/tags/example/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>chatper06. divide &amp; conquer</title>
+      <link>http://localhost:62695/algorithm/1753434059161-chatper06.-divide--conquer/</link>
+      <pubDate>Fri, 25 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:62695/algorithm/1753434059161-chatper06.-divide--conquer/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:62695/algorithm/1753434059161-chatper06.-divide--conquer/feature.png" />
+    </item>
+    
+  </channel>
+</rss>

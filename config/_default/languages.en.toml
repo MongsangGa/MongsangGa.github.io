@@ -1,0 +1,17 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "MongsangGa"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+description = "Developer Diary"
+
+["params.author"]
+name = "MongsangGa"
+image = "avatar.png"
+headline = "안광지배철"

@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Grid">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Grid (a) -->
+        <mxCell id="2" value="(a)" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="1" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="20" y="40" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="2" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="3" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="20" y="80" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="4" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="40" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Grid (b) -->
+        <mxCell id="7" value="(b)" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="160" y="10" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="J" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="140" y="40" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="S" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="40" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="3" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="140" y="80" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="√" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="80" width="40" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Grid (c) -->
+        <mxCell id="12" value="(c)" style="text;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="10" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="3" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="260" y="40" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" value="√" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="40" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="J" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="260" y="80" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" value="S" style="rectangle;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="40" height="40" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
