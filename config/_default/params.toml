@@ -10,7 +10,6 @@ disableTextInHeader = false
 fingerprintAlgorithm = "sha512"
 giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v11.next.forgejo.org"
-firebase = { }
 fathomAnalytics = { }
 umamiAnalytics = { }
 selineAnalytics = { }
@@ -21,6 +20,8 @@ advertisement = { }
 smartTOC = true
 smartTOCHideUnfocusedChildren = true
 highlightCurrentMenuArea = true
+showViews = true
+showLikes = true
 
 [header]
 layout = "basic"
@@ -45,8 +46,9 @@ disableHeroImageFilter = false
 
 [article]
 showDate = true
-showViews = false
-showLikes = false
+showViews = true
+showLikes = true
+showComments = true
 showDateOnlyInArticle = false
 showDateUpdated = false
 showAuthor = false
@@ -75,8 +77,8 @@ layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false
 showSummary = false
-showViews = false
-showLikes = false
+showViews = true
+showLikes = true
 showTableOfContents = true
 showCards = false
 orderByWeight = false
@@ -106,3 +108,26 @@ showTableOfContents = true
 groupByYear = false
 cardView = false
 cardViewScreenWidth = false
+
+[firebase]
+apiKey = "$FIREBASE_API_KEY"
+authDomain = "$FIREBASE_AUTH_DOMAIN"
+projectId = "$FIREBASE_PROJECT_ID"
+storageBucket = "$FIREBASE_STORAGE_BUCKET"
+messagingSenderId = "$FIREBASE_MESSAGING_SENDER_ID"
+appId = "$FIREBASE_APP_ID"
+measurementId = "$FIREBASE_MEASUREMENT_ID"
+
+[giscus]
+repo = "MongsangGa/MongsangGa.github.io"
+repoId = "R_kgDOPVxy-A"
+category = "General"
+categoryId = "DIC_kwDOPVxy-M4CtnqA"
+mapping = "pathname"
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+theme = "preferred_color_scheme"
+lang = "ko"
+loading = "lazy"
